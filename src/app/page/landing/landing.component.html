@@ -1,0 +1,16 @@
+<div class="container">
+    <h4 class="display-5 text-center m-3">Popular Movies</h4>
+    <div class="row row-cols-1 row-cols-md-6 g-4 m-3">
+        <div class="col" *ngFor="let popular of popularMovies">
+          <div class="card">
+            <img class="img-fluid" [src]="popular.image" alt="popular.title">
+            <!-- <div class="card-body">
+              <h5 class="card-title">{{popular.title}}</h5>
+              <p class="card-text">{{popular.year}}</p>
+            </div> -->
+          </div>
+        </div>
+    </div>
+
+    
+</div>
