@@ -8,18 +8,24 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './page/landing/landing.component';
 import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
 import { ThemdbComponent } from './page/themdb/themdb.component';
+import { PopularComponent } from './components/popular/popular.component';
+import { LatestComponent } from './components/latest/latest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     MoviedetailComponent,
-    ThemdbComponent
+    ThemdbComponent,
+    PopularComponent,
+    LatestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
+
 
   ],
   providers: [],

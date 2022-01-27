@@ -13,19 +13,10 @@ export class LandingComponent implements OnInit {
   items: any = [];
 
   ngOnInit(): void {
-    //this.getLatest();
-    this.getPopular();
+    
   }
 
-  //title: any = [];
-  getPopular(){
-    this.movieService.getPopularMovies().subscribe((res: any) =>{
-    this.popularMovies = res.items
-      console.log(this.popularMovies)
-      
-    })
-  }
-
+  
 
 
 
